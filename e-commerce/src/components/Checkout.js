@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext } from 'react';
 
 import CartContext from '../context/cart/CartContext'
 import CurrencyFormat from 'react-currency-format';
@@ -17,27 +17,16 @@ function Checkout() {
   const getcartItemsTotal = (cartItems ) =>
   cartItems ?.reduce((amount, item) => item.price + amount, 0);
   return (
-    <div className="row" style={{margin:"100px",justifyContent:"center",padding:"0px" }}>
-      <div className style={{display:"flex"}}>
-        <div className="card-body">
-      <h3>Review items and Total Price</h3>
-      {cartItems.map((item) => {
-      let id = item.id;
-      let title = item.title;
-      let price = item.price;
-         let productDiv = (
+    <div className="container" >
+      <div className= "row">
+        <div className="col-md-6">
+      <h4>Review items and Total Price</h4>
+      {cartItems.map((product) => {
+              let productDiv = (
                
-        <div
-          key={id}
-          className="col-md-6"
-        >
-           <div className="col-md-6">
-             
-           <div className="col-md-6"></div>
-                <div className="col-md-6"> <sup>$</sup>{price}</div>
-           </div>
-        
-
+        < div key={product.id}>
+           <img  width="200px" hight="200px"src={product.image} alt={product.title} />
+          <div className=""> <sup>$</sup>{product.price}</div>
         </div>
       
       );
@@ -60,40 +49,39 @@ function Checkout() {
       />
     </div>
    
-    <div>
-    <form className="col-md-12 card-body" >
-  <div className="col-md-12">
+    <div className="col-md-6">
+  
+
+    <form className="" width="600px" hight="200px">
+  <div >
     <label for="inputEmail4" className="form-label">Email</label>
     <input type="email" className="form-control" id="inputEmail4"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <label for="inputPassword4" className="form-label">Password</label>
     <input type="password" className="form-control" id="inputPassword4"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <label for="inputAddress" className="form-label">Address</label>
     <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <label for="inputAddress2" className="form-label">Credit Card Info</label>
     <input type="text" className="form-control" id="inputAddress2" placeholder="Credit Card Info"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <label for="inputCity" className="form-label">City</label>
     <input type="text" className="form-control" id="inputCity"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <label for="inputState" className="form-label">State</label>
-    <select id="inputState" className="form-select">
-      <option selected>Choose...</option>
-      <option>...</option>
-    </select>
+    <input type="text" className="form-control" id="inputState"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <label for="inputZip" className="form-label">Zip</label>
     <input type="text" className="form-control" id="inputZip"/>
   </div>
-  <div className="col-md-12">
+  <div >
     <div className="form-check">
       <input className="form-check-input" type="checkbox" id="gridCheck"/>
       <label className="form-check-label" for="gridCheck">
@@ -101,8 +89,10 @@ function Checkout() {
       </label>
     </div>
   </div>
-  <div className="col-md-12">
-    <button type="submit"className= "btn btn-outline-dark ms-2" onClick={() => emptyItem()}>Sign in</button>
+  <div >
+    <Link to ="/">
+    <button type="submit"className= "btn btn-outline-dark ms-2" onClick={() => emptyItem()}>Check out</button>
+    </Link>
   </div>
 </form>
 </div>

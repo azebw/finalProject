@@ -39,8 +39,7 @@ function Cart() {
                    <p className="lead fw-bold">
                   
                 </p> 
-                <button className="btn btn-outline-dark me-4" onClick={() => removeItem(item)}><i className="fa fa-minus"></i></button>
-                <button className="btn btn-outline-dark" onClick={()=>addToCart(item)}><i className="fa fa-plus"></i></button>
+           
 
         
         </div>
