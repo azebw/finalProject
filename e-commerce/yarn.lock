@@ -1900,9 +1900,9 @@
     "lodash.flatten" "^4.4.0"
 
 "@heroku-cli/plugin-pg-v5@^7.59.1":
-  "integrity" "sha512-0qg8wb2V1OIMF3yXPfhexzepRlP2xaDYzBo7r0Gk7mHIAfiIPXnbBsP1d2Xj773wgz9iukf5SDh35jnOWvfnSQ=="
-  "resolved" "https://registry.npmjs.org/@heroku-cli/plugin-pg-v5/-/plugin-pg-v5-7.59.1.tgz"
-  "version" "7.59.1"
+  "integrity" "sha512-y38uzKRU1mwZMBdjL6RgiXo19J50EU77fwkd186MgTnocczyGcOxSybnGFoAJwIfJE+MUtBlb9DJ5XkrbvYKXA=="
+  "resolved" "https://registry.npmjs.org/@heroku-cli/plugin-pg-v5/-/plugin-pg-v5-7.59.2.tgz"
+  "version" "7.59.2"
   dependencies:
     "@heroku-cli/plugin-addons" "^1.2.29"
     "bytes" "^3.1.0"
@@ -4123,9 +4123,9 @@
   "version" "5.0.0"
 
 "bytes@^3.1.0":
-  "integrity" "sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg=="
-  "resolved" "https://registry.npmjs.org/bytes/-/bytes-3.1.0.tgz"
-  "version" "3.1.0"
+  "integrity" "sha512-dWe4nWO/ruEOY7HkUJ5gFt1DCFV9zPRoJr8pV0/ASQermOZjtq8jMjOprC0Kd10GLN+l7xaUPvxzJFWtxGu8Fg=="
+  "resolved" "https://registry.npmjs.org/bytes/-/bytes-3.1.1.tgz"
+  "version" "3.1.1"
 
 "bytes@3.0.0":
   "integrity" "sha1-0ygVQE1olpn4Wk6k+odV3ROpYEg="
@@ -13789,17 +13789,17 @@
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
 
-"uuid@^3.3.2", "uuid@^3.4.0":
+"uuid@^3.3.2":
   "integrity" "sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A=="
   "resolved" "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
   "version" "3.4.0"
 
-"uuid@^8.3.0":
-  "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
-  "resolved" "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
-  "version" "8.3.2"
+"uuid@^3.4.0":
+  "integrity" "sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A=="
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-3.4.0.tgz"
+  "version" "3.4.0"
 
-"uuid@^8.3.1":
+"uuid@^8.3.0", "uuid@^8.3.1", "uuid@^8.3.2":
   "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
   "resolved" "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   "version" "8.3.2"
